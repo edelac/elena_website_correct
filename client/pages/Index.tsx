@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "../components/ui/button";
 import { Card, CardContent } from "../components/ui/card";
-import { ArrowRight, MapPin, PalmTree, Compass, Camera } from "lucide-react";
+import { ArrowRight, MapPin, Leaf, Compass, Camera } from "lucide-react";
 import { tours } from "../data/tours";
 
 export default function Index() {
