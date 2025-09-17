@@ -1,0 +1,35 @@
+# Cloudflare Workers configuration (migrated from Pages)
+name = "elena-website"
+compatibility_date = "2025-01-01"
+main = "./worker/index.js"
+
+# Custom domain routing
+routes = [
+  { pattern = "elenadelacruz.work/*", zone_name = "elenadelacruz.work" },
+  { pattern = "www.elenadelacruz.work/*", zone_name = "elenadelacruz.work" }
+]
+
+# Development environment variables
+[env.development]
+name = "elenawebsite-dev"
+workers_dev = true
+
+# Production environment
+[env.production]
+name = "elenawebsite"
+routes = [
+  { pattern = "elenadelacruz.work/*", zone_name = "elenadelacruz.work" },
+  { pattern = "www.elenadelacruz.work/*", zone_name = "elenadelacruz.work" }
+]
+
+# Enable preview URLs for development
+preview_urls = true
+
+# Use workers.dev subdomain for dev
+workers_dev = true
+
+# Assets configuration (was pages_build_output_dir)
+[assets]
+directory = "./repo"
+not_found_handling = "single-page-application"
+binding = "ASSETS"
