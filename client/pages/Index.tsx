@@ -14,7 +14,7 @@ export default function Index() {
       <section className="relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+            src="https://cdn.builder.io/api/v1/image/assets%2F9f59a6af392c4921898a98b23a7b41e9%2F52632780d22546b59fe073a79ee99bfd"
             alt="Costa Rica coastline at sunrise"
             className="w-full h-full object-cover"
           />
@@ -59,7 +59,7 @@ export default function Index() {
               </div>
             </div>
             <div className="rounded-xl overflow-hidden shadow-lg h-64 md:h-80">
-              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e" alt="Rainforest canopy" className="w-full h-full object-cover" />
+              <img src="https://cdn.builder.io/api/v1/image/assets%2F9f59a6af392c4921898a98b23a7b41e9%2Fafea3a428fb949a5a2adeb3579330db7" alt="Rainforest canopy" className="w-full h-full object-cover" />
             </div>
           </div>
         </div>
