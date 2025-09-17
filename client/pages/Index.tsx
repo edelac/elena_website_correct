@@ -53,7 +53,7 @@ export default function Index() {
                 We are a Costa Rican tour agency creating authentic experiences across Arenal, Monteverde, Manuel Antonio, Tortuguero, and Guanacaste. From wildlife encounters to beach days, we curate trips that balance discovery and comfort.
               </p>
               <div className="flex flex-wrap gap-4 text-brand-gray-700">
-                <div className="inline-flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-sm"><PalmTree className="w-4 h-4 text-primary" /> Eco‑friendly operations</div>
+                <div className="inline-flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-sm"><Leaf className="w-4 h-4 text-primary" /> Eco‑friendly operations</div>
                 <div className="inline-flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-sm"><Compass className="w-4 h-4 text-primary" /> Expert local guides</div>
                 <div className="inline-flex items-center gap-2 bg-white rounded-lg px-4 py-2 shadow-sm"><MapPin className="w-4 h-4 text-primary" /> Small groups</div>
               </div>
@@ -124,7 +124,7 @@ export default function Index() {
         <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 text-white">
           <h2 className="text-3xl md:text-4xl font-bold">Ready for your Costa Rica adventure?</h2>
           <p className="mt-3 text-white/90">
-            Tell us your travel style and dates—we'll craft the perfect itinerary.
+            Tell us your travel style and dates���we'll craft the perfect itinerary.
           </p>
           <div className="mt-8">
             <Button size="lg" variant="secondary" asChild>
