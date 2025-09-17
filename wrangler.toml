@@ -1,5 +1,5 @@
 # Cloudflare Workers configuration (migrated from Pages)
-name = "elena-web"
+name = "elena"
 compatibility_date = "2025-01-01"
 main = "./worker/index.js"
 
