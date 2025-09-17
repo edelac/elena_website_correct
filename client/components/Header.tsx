@@ -24,8 +24,9 @@ export default function Header() {
   };
 
   const navigation = [
-    { name: "Demo", href: "/platform" },
-    { name: "About Us", href: "/about" },
+    { name: "Tours", href: "/tours" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "About", href: "/about" },
   ];
 
   return (
