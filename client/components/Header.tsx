@@ -24,8 +24,9 @@ export default function Header() {
   };
 
   const navigation = [
-    { name: "Demo", href: "/platform" },
-    { name: "About Us", href: "/about" },
+    { name: "Tours", href: "/tours" },
+    { name: "Gallery", href: "/gallery" },
+    { name: "About", href: "/about" },
   ];
 
   return (
@@ -34,22 +35,12 @@ export default function Header() {
         <div className="flex justify-between items-center h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center" onClick={handleLogoClick}>
-            <img
-              src="https://cdn.builder.io/api/v1/image/assets%2F67df0d8a6017460c9549278602205c97%2F11d5890310554b5580f6995fa335c2ec?format=webp&width=800"
-              alt="Hafestus Logo"
-              className="h-24 w-auto"
-              onError={(e) => {
-                // Fallback to text logo if image fails to load
-                e.currentTarget.style.display = "none";
-                e.currentTarget.nextElementSibling.style.display = "flex";
-              }}
-            />
-            <div className="hidden items-center space-x-2">
+            <div className="flex items-center space-x-2">
               <div className="bg-primary rounded-lg p-1.5">
                 <Zap className="h-6 w-6 text-white" />
               </div>
               <span className="text-xl font-bold text-brand-gray-900">
-                Hafestus
+                Costa Rica Adventures
               </span>
             </div>
           </Link>

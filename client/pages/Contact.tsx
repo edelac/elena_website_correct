@@ -17,25 +17,13 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Create mailto link
-    const mailtoLink = `mailto:andre@hafestus.com?subject=${encodeURIComponent(
-      formData.subject,
-    )}&body=${encodeURIComponent(
-      `From: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`,
-    )}`;
+    // Simulate async submission
+    await new Promise((r) => setTimeout(r, 800));
 
-    // Open mailto link
-    window.location.href = mailtoLink;
-
-    // Show success message
     setSubmitted(true);
     setIsSubmitting(false);
 
-    // Reset form after a delay
-    setTimeout(() => {
-      setFormData({ name: "", email: "", subject: "", message: "" });
-      setSubmitted(false);
-    }, 3000);
+    setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
   const handleChange = (
@@ -75,8 +63,7 @@ export default function Contact() {
                   Message Sent!
                 </h3>
                 <p className="text-brand-gray-600">
-                  Your email client should have opened. If not, please contact
-                  us directly at andre@hafestus.com
+                  Thanks for reaching out. Our team will respond within one business day.
                 </p>
               </div>
             ) : (
@@ -179,13 +166,7 @@ export default function Contact() {
 
         <div className="text-center mt-8">
           <p className="text-brand-gray-600">
-            You can also reach us directly at{" "}
-            <a
-              href="mailto:andre@hafestus.com"
-              className="text-primary hover:underline font-medium"
-            >
-              andre@hafestus.com
-            </a>
+            Prefer email? Write to us using the form above or via the Contact Us button in the header.
           </p>
         </div>
       </div>
